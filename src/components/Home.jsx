@@ -1,4 +1,5 @@
 import MediaRow from './MediaRow';
+import TempCounter from './TempCounter';
 
 const mediaArray = [
   {
@@ -40,6 +41,8 @@ const mediaArray = [
 const Home = () => {
   return (
     <>
+    {/*This comment inside jSX*, state demo/}
+    {/*<TempCounter/> */}
       <h2>My Media</h2>
       <table>
         <thead>
