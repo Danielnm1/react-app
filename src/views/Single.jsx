@@ -26,6 +26,7 @@ const Single = () => {
         </video>
       )}
       <p>{item.description}</p>
+      <p>Owner: {item.username}</p>
       <p>Created: {new Date(item.created_at).toLocaleString('fi-FI')}</p>
       <p>Size: {item.filesize} bytes</p>
       <p>Type: {item.media_type}</p>

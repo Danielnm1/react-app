@@ -1,14 +1,15 @@
 import {Link} from 'react-router';
 import PropTypes from 'prop-types';
 
-const MediaRow = ({item}) => {
+const MediaRow = ({item, setItem}) => {
   return (
-    <tr>
+    <tr onClick={() => setItem(item)}>
       <td>
         <img src={item.thumbnail} alt={item.title} />
       </td>
       <td>{item.title}</td>
       <td>{item.description}</td>
+      <td>{item.username}</td>
       <td>{new Date(item.created_at).toLocaleString('fi-FI')}</td>
       <td>{item.filesize}</td>
       <td>{item.media_type}</td>
@@ -23,6 +24,7 @@ const MediaRow = ({item}) => {
 
 MediaRow.propTypes = {
   item: PropTypes.object.isRequired,
+  setItem: PropTypes.func,
 };
 
 export default MediaRow;
