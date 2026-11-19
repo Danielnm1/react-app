@@ -1,3 +1,3 @@
-# React Routing Assignment
+# React custom-hooks assignment
 
-Open [My Media App (Routing)](https://users.metropolia.fi/~danielnm/hooks/) to view it in the browser.
+Open [My Media App (custom-hooks)](https://users.metropolia.fi/~danielnm/custom-hooks/) to view it in the browser.
