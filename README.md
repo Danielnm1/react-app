@@ -1,3 +1,3 @@
-# React custom-hooks assignment
+# React forms assignment
 
-Open [My Media App (custom-hooks)](https://users.metropolia.fi/~danielnm/custom-hooks/) to view it in the browser.
+Open [My Media App (forms)](https://users.metropolia.fi/~danielnm/forms/) to view it in the browser.
