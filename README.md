@@ -1,3 +1,3 @@
-# React context assignment
+# React upload assignment
 
-Open [My Media App (context)](https://users.metropolia.fi/~danielnm/context/) to view it in the browser.
+Open [My Media App (upload)](https://users.metropolia.fi/~danielnm/upload/) to view it in the browser.
