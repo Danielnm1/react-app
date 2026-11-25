@@ -1,36 +1,21 @@
-import {useEffect, useState} from 'react';
-import {useUser} from '../hooks/apiHooks';
+import {useUserContext} from '../hooks/contextHooks';
 
 const Profile = () => {
-  const [user, setUser] = useState({});
-  const {getUserByToken} = useUser();
-
-  useEffect(() => {
-    const getUserInfo = async () => {
-      const token = localStorage.getItem('token');
-      if (!token) {
-        console.log('token not found');
-        return;
-      }
-      try {
-        const userResult = await getUserByToken(token);
-        console.log('profile user', userResult);
-        setUser(userResult);
-      } catch (error) {
-        console.error(error.message);
-      }
-    };
-    getUserInfo();
-  }, []);
+  const {user, handleLogout} = useUserContext();
 
   return (
     <>
-      <h2>{user.username}</h2>
-      <ul>
-        <li>Registered: {user.created_at}</li>
-        <li>Email: {user.email}</li>
-        <li>User level: {user.level_name}</li>
-      </ul>
+      {user && (
+        <>
+          <h2>{user.username}</h2>
+          <ul>
+            <li>Registered: {user.created_at}</li>
+            <li>Email: {user.email}</li>
+            <li>User level: {user.level_name}</li>
+          </ul>
+          <button onClick={() => handleLogout()}>Logout</button>
+        </>
+      )}
     </>
   );
 };

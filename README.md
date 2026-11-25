@@ -1,3 +1,3 @@
-# React forms assignment
+# React context assignment
 
-Open [My Media App (forms)](https://users.metropolia.fi/~danielnm/forms/) to view it in the browser.
+Open [My Media App (context)](https://users.metropolia.fi/~danielnm/context/) to view it in the browser.
